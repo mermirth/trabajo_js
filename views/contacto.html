@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maríu · Recetas caseras - Contacto</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-page="contacto">
+
+  <header class="site-header">
+    <div class="brand">
+      <a href="../index.html" class="brand-name">Maríu · Recetas caseras</a>
+    </div>
+
+    <nav class="nav">
+      <a href="galeria.html" data-nav="galeria">Galería</a>
+      <a href="presupuesto.html" data-nav="presupuesto">Presupuesto</a>
+      <a href="contacto.html" data-nav="contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+  <section class="card">
+    <h1>Contacto</h1>
+    <p>¿Tienes dudas o quieres información? Escríbeme o ven a verme.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><strong>Maríu · Recetas caseras</strong></p>
+        <p>📍 Bilbao (centro)</p>
+        <p>📞 600 123 123</p>
+        <p>✉️ contacto@mariu-recetas.es</p>
+      </div>
+
+      <div id="map" class="map"></div>
+      <p id="mapMsg" class="hint" aria-live="polite"></p>
+
+    </div>
+  </section>
+  </main>
+
+
+ <footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-section">
+      <p class="footer-title">Síguenos</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram">
+          <img src="/assets/icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#" aria-label="TikTok">
+          <img src="/assets/icons/tiktok.svg" alt="TikTok">
+        </a>
+        <a href="#" aria-label="YouTube">
+          <img src="/assets/icons/youtube.svg" alt="YouTube">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <p class="footer-title">Dirección</p>
+      <p>Bilbao (centro), Bizkaia</p>
+    </div>
+
+    <div class="footer-section">
+      <p class="footer-title">Legal</p>
+      <a href="#" id="legal-link">Aviso legal</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Maríu · Recetas caseras</p>
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/contact-map.js" defer></script>
+
+</body>
+</html>

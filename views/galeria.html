@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maríu · Recetas caseras - Galería</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body data-page="galeria">
+
+  <header class="site-header">
+    <div class="brand">
+      <a href="../index.html" class="brand-name">Maríu · Recetas caseras</a>
+    </div>
+
+    <nav class="nav">
+      <a href="galeria.html" data-nav="galeria">Galería</a>
+      <a href="presupuesto.html" data-nav="presupuesto">Presupuesto</a>
+      <a href="contacto.html" data-nav="contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Galería</h1>
+      <p>Haz clic en una imagen para ampliarla.</p>
+
+      <div id="gallery" class="gallery-grid"></div>
+    </section>
+
+    <div id="lightbox" class="lightbox" hidden>
+      <button id="closeLb" class="lb-close" aria-label="Cerrar">×</button>
+      <img id="lbImg" alt="Imagen ampliada" />
+      <p id="lbCaption"></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-section">
+      <p class="footer-title">Síguenos</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram">
+          <img src="/assets/icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#" aria-label="TikTok">
+          <img src="/assets/icons/tiktok.svg" alt="TikTok">
+        </a>
+        <a href="#" aria-label="YouTube">
+          <img src="/assets/icons/youtube.svg" alt="YouTube">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <p class="footer-title">Dirección</p>
+      <p>Bilbao (centro), Bizkaia</p>
+    </div>
+
+    <div class="footer-section">
+      <p class="footer-title">Legal</p>
+      <a href="#" id="legal-link">Aviso legal</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Maríu · Recetas caseras</p>
+  </div>
+</footer>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/gallery.js" defer></script>
+</body>
+</html>

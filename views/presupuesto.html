@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maríu · Recetas caseras - Presupuesto</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body data-page="presupuesto">
+
+  <header class="site-header">
+    <div class="brand">
+      <a href="../index.html" class="brand-name">Maríu · Recetas caseras</a>
+    </div>
+
+    <nav class="nav">
+      <a href="galeria.html" data-nav="galeria">Galería</a>
+      <a href="presupuesto.html" data-nav="presupuesto">Presupuesto</a>
+      <a href="contacto.html" data-nav="contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Presupuesto</h1>
+      <p>Calcula tu presupuesto al instante. El total se actualiza automáticamente.</p>
+
+      <form id="budgetForm" class="form">
+        <fieldset class="fieldset">
+          <legend>Datos de contacto</legend>
+
+          <label class="label">
+            Nombre
+            <input id="nombre" name="nombre" type="text" required placeholder="María" />
+          </label>
+
+          <label class="label">
+            Apellidos
+            <input id="apellidos" name="apellidos" type="text" required placeholder="García López" />
+          </label>
+
+          <label class="label">
+            Teléfono
+            <input id="phone" name="phone" type="tel" required placeholder="600123123" />
+          </label>
+
+          <label class="label">
+            Email
+            <input id="email" name="email" type="email" required placeholder="tunombre@email.com" />
+          </label>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Servicio</legend>
+
+          <label class="label">
+            Pack
+            <select id="pack" name="pack" required>
+              <option value="" selected disabled>Elige un pack</option>
+              <option value="basico">Pack Básico (1 clase) — 35€</option>
+              <option value="pro">Pack Pro (3 clases) — 95€</option>
+              <option value="familia">Pack Familia (4 clases) — 120€</option>
+            </select>
+          </label>
+
+          <label class="label">
+            Personas (1–10)
+            <input id="people" name="people" type="number" min="1" max="10" value="1" required />
+          </label>
+
+          <label class="label">
+            Plazo (meses)
+            <input id="discount" name="discount" type="number" min="0" max="50" value="0" />
+          </label>
+
+          <div class="checks">
+            <label class="check">
+              <input id="extraMenu" type="checkbox" />
+              PDF con menú semanal (+8€)
+            </label>
+
+            <label class="check">
+              <input id="extraLista" type="checkbox" />
+              Lista de compra (+5€)
+            </label>
+
+            <label class="check">
+              <input id="extraVideollamada" type="checkbox" />
+              Videollamada 30 min (+12€)
+            </label>
+          </div>
+        </fieldset>
+
+        <section class="card total">
+          <div>
+            <h2>Total</h2>
+            <p class="hint" id="errors" aria-live="polite"></p>
+          </div>
+          <p class="price"><span id="total">0</span> €</p>
+        </section>
+
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-section">
+      <p class="footer-title">Síguenos</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram">
+          <img src="/assets/icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#" aria-label="TikTok">
+          <img src="/assets/icons/tiktok.svg" alt="TikTok">
+        </a>
+        <a href="#" aria-label="YouTube">
+          <img src="/assets/icons/youtube.svg" alt="YouTube">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <p class="footer-title">Dirección</p>
+      <p>Bilbao (centro), Bizkaia</p>
+    </div>
+
+    <div class="footer-section">
+      <p class="footer-title">Legal</p>
+      <a href="#" id="legal-link">Aviso legal</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Maríu · Recetas caseras</p>
+  </div>
+</footer>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/budget.js" defer></script>
+</body>
+</html>

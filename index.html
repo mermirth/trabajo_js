@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maríu · Recetas caseras</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="index">
+
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="brand-name">Maríu · Recetas caseras</a>
+    </div>
+
+  <nav class="nav">
+    <a href="views/galeria.html" data-nav="galeria">Galería</a>
+    <a href="views/presupuesto.html" data-nav="presupuesto">Presupuesto</a>
+    <a href="views/contacto.html" data-nav="contacto">Contacto</a>
+  </nav>
+
+  </header>
+
+ <main class="container">
+
+  <section class="card">
+    <h1>Inicio</h1>
+    <p>
+      Bienvenid@ a <strong>Maríu · Recetas caseras</strong>: cocina real, de diario y sin complicaciones.
+      Aquí encontrarás ideas rápidas entre semana, platos de cuchara, cenas ligeras y algún capricho de postre.
+    </p>
+    <p>
+      Mi objetivo es que cocines más en casa sin perder tiempo: recetas claras, ingredientes fáciles y trucos que funcionan.
+    </p>
+
+    <img
+      src="assets/images/portada.jpg"
+      alt="Platos caseros de Maríu"
+      class="home-image"
+    />
+  </section>
+
+  <section class="card">
+    <h2>Sobre Maríu</h2>
+    <p>
+      Soy María y me encanta la cocina casera de toda la vida, pero adaptada al ritmo de hoy.
+      Me gusta enseñar recetas que salen bien a la primera, con pasos simples y resultados con buena pinta.
+    </p>
+    <ul class="bullets">
+      <li><strong>Recetas prácticas:</strong> pensadas para hacer con lo que tienes en casa.</li>
+      <li><strong>Trucos útiles:</strong> tiempos, puntos de cocción y sustituciones sencillas.</li>
+      <li><strong>Variedad:</strong> carne, pescado, verduras y postres caseros.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Noticias</h2>
+    <div id="news" class="news-grid" aria-live="polite"></div>
+  </section>
+
+  <section class="card">
+    <h2>Suscríbete</h2>
+    <p>
+      Si quieres recibir una receta nueva cada semana y una lista de la compra lista para usar, suscríbete.
+      Cero spam: solo ideas de cocina y trucos rápidos.
+    </p>
+
+    <form class="subscribe" id="subscribeForm">
+      <label class="label">
+        Tu email
+        <input type="email" id="subEmail" required placeholder="tunombre@email.com" />
+      </label>
+      <button class="btn" type="submit">Quiero suscribirme</button>
+      <p class="hint" id="subMsg" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<script src="js/news.js" defer></script>
+
+
+ <footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-section">
+      <p class="footer-title">Síguenos</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram">
+          <img src="/assets/icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#" aria-label="TikTok">
+          <img src="/assets/icons/tiktok.svg" alt="TikTok">
+        </a>
+        <a href="#" aria-label="YouTube">
+          <img src="/assets/icons/youtube.svg" alt="YouTube">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <p class="footer-title">Dirección</p>
+      <p>Bilbao (centro), Bizkaia</p>
+    </div>
+
+    <div class="footer-section">
+      <p class="footer-title">Legal</p>
+      <a href="#" id="legal-link">Aviso legal</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Maríu · Recetas caseras</p>
+  </div>
+</footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
